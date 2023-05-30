@@ -1,0 +1,9 @@
+--cpu ARM7TDMI
+".\startup.o"
+".\timer.o"
+".\main.o"
+".\led.o"
+--strict --scatter ".\timery.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\timery.map" -o .\timery.axf
